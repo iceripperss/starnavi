@@ -1,0 +1,71 @@
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    width: 510px;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+.picker {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.activeBox {
+    background: blue;
+}
+
+button, select {
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: opacity;
+}
+
+button {
+    background: #61dafb;
+    padding: 10px 30px;
+    outline: 1px solid #61dafb;
+}
+
+select {
+    background: white;
+    padding: 10px 10px;
+}
+
+.aside {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+h4 {
+    margin-top: 0;
+}
+
+.asideItem {
+    padding: 2px;
+    background: black;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
